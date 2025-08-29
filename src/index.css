@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import 'react-tooltip/dist/react-tooltip.css';
+
+/* Leaflet default CSS */
+@import "leaflet/dist/leaflet.css";
+
+
+@keyframes pulse {
+  0% { r: 6; opacity: 0.8; }
+  50% { r: 12; opacity: 0.3; }
+  100% { r: 6; opacity: 0.8; }
+}
+
+.leaflet-interactive.selected {
+  animation: pulse 1.5s infinite;
+}
+
+
+/* Map container fix for small screens */
+/* .leaflet-container {
+  outline: none;
+} */
