@@ -32,16 +32,37 @@ export default function App() {
 
   return (
     <div className="h-screen w-screen flex flex-col">
-      <header className="px-4 py-3 bg-white border-b flex items-center justify-between">
-        <h1 className="text-xl font-semibold">
-          🌍 Earthquake Visualizer — Last {range}
-        </h1>
+      <header className="px-6 py-4 bg-gradient-to-r from-blue-900 to-indigo-800 text-white shadow-lg flex items-center justify-between">
+        <div className="flex items-center">
+          <div className="bg-white/10 p-2 rounded-lg mr-3">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <h1 className="text-xl font-semibold tracking-tight">
+              Earthquake Visualizer
+            </h1>
+            <p className="text-sm text-blue-100 opacity-90">Last {range} • Real-time seismic data</p>
+          </div>
+        </div>
+
         <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center bg-white/10 rounded-lg px-3 py-1.5 text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Last updated: {new Date().toLocaleTimeString()}
+          </div>
+
           <button
             onClick={refetch}
-            className="text-sm px-3 py-1.5 rounded-lg border hover:bg-gray-50"
+            className="flex items-center bg-white text-blue-900 hover:bg-blue-50 transition-colors text-sm font-medium px-4 py-2 rounded-lg border border-white/20 shadow-sm cursor-pointer"
           >
-            Refresh
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            Refresh Data
           </button>
         </div>
       </header>
@@ -57,7 +78,7 @@ export default function App() {
           setRange={setRange}
           showHeatmap={showHeatmap}
           setShowHeatmap={setShowHeatmap}
-           onSelect={setSelected} // 👈 set selected when sidebar item clicked
+          onSelect={setSelected} // 👈 set selected when sidebar item clicked
         />
         <MapView
           loading={loading}
