@@ -39,13 +39,30 @@ function FitBounds({ points }) {
   return null;
 }
 
-function FlyToFeature({ feature }) {
+function FlyToFeature({ feature, zoomLevel = 6, zoomAction = null }) {
   const map = useMap();
+
   useEffect(() => {
     if (!feature?.geometry?.coordinates) return;
+
     const [lon, lat] = feature.geometry.coordinates;
-    map.flyTo([lat, lon], 6, { animate: true });
-  }, [feature, map]);
+    let finalZoom = zoomLevel;
+
+    if (zoomAction === 'in') {
+      // Zoom in: increase zoom level by 2
+      finalZoom = Math.min((map.getZoom() || zoomLevel) + 2, 20); // Max zoom 20
+    } else if (zoomAction === 'out') {
+      // Zoom out: decrease zoom level by 2
+      finalZoom = Math.max((map.getZoom() || zoomLevel) - 2, 1); // Min zoom 1
+    }
+
+    map.flyTo([lat, lon], finalZoom, {
+      animate: true,
+      duration: 2.5,
+      easeLinearity: 0.25,
+    });
+  }, [feature, map, zoomLevel, zoomAction]);
+
   return null;
 }
 

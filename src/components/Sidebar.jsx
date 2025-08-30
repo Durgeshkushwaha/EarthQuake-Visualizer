@@ -60,7 +60,7 @@ export default function Sidebar({
             <div className="flex gap-2">
               <button
                 onClick={() => setRange("hour")}
-                className={classNames("px-4 py-2.5 rounded-xl text-sm font-medium border transition-all duration-200", {
+                className={classNames("px-4 py-2.5 rounded-xl text-sm font-medium border transition-all duration-200 cursor-pointer" , {
                   "bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-transparent shadow-lg shadow-indigo-500/25": range === "hour",
                   "bg-gray-700/70 text-gray-200 border-gray-600 hover:bg-gray-700 hover:shadow-sm": range !== "hour",
                 })}
@@ -69,7 +69,7 @@ export default function Sidebar({
               </button>
               <button
                 onClick={() => setRange("day")}
-                className={classNames("px-4 py-2.5 rounded-xl text-sm font-medium border transition-all duration-200", {
+                className={classNames("px-4 py-2.5 rounded-xl text-sm font-medium border transition-all duration-200 cursor-pointer", {
                   "bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-transparent shadow-lg shadow-indigo-500/25": range === "day",
                   "bg-gray-700/70 text-gray-200 border-gray-600 hover:bg-gray-700 hover:shadow-sm": range !== "day",
                 })}
@@ -78,7 +78,7 @@ export default function Sidebar({
               </button>
               <button
                 onClick={() => setRange("week")}
-                className={classNames("px-4 py-2.5 rounded-xl text-sm font-medium border transition-all duration-200", {
+                className={classNames("px-4 py-2.5 rounded-xl text-sm font-medium border transition-all duration-200 cursor-pointer", {
                   "bg-gradient-to-r from-indigo-600 to-purple-600 text-white border-transparent shadow-lg shadow-indigo-500/25": range === "week",
                   "bg-gray-700/70 text-gray-200 border-gray-600 hover:bg-gray-700 hover:shadow-sm": range !== "week",
                 })}

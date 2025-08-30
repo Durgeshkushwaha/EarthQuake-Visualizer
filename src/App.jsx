@@ -66,6 +66,8 @@ export default function App() {
           </button>
         </div>
       </header>
+      <hr className="bg-gray-800 "></hr>
+      
 
       <main className="flex-1 grid grid-cols-1 md:grid-cols-[360px_1fr]">
         <Sidebar
@@ -88,9 +90,9 @@ export default function App() {
         />
       </main>
 
-      <footer className="px-4 py-2 text-xs text-gray-500 bg-white border-t">
+      {/* <footer className="px-4 py-2 text-xs text-gray-500 bg-white border-t">
         Data: USGS. Map © OpenStreetMap contributors. Heatmap uses magnitude as intensity.
-      </footer>
+      </footer> */}
     </div>
   );
 }
