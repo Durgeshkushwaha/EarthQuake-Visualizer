@@ -37,14 +37,16 @@ Built with **React, Leaflet, and Tailwind CSS**, this project helps geography st
 git clone https://github.com/Durgeshkushwaha/EarthQuake-Visualizer.git
 cd earthquake-visualizer
 
-### 2. Install dependencies
-```bash
+
+Install dependencies
+
 npm install
 
-### 3. Run the development server
-```bash
+Run the development server
+
 npm run dev
 
-### 4. Open in browser
-```bash
 Open in browser
+
+http://localhost:5173
+
