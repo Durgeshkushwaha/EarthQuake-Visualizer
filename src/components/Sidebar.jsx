@@ -124,7 +124,7 @@ export default function Sidebar({
               </div>
               <div className="text-sm mt-2 flex justify-between items-center">
                 <span className="text-gray-300">Current:</span>
-                <span className="font-bold text-gray-100 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">{filters.minMag}</span>
+                <span className="font-bold text-gray-100 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text ">{filters.minMag}</span>
               </div>
             </div>
 
@@ -187,7 +187,7 @@ export default function Sidebar({
                     onClick={() => onSelect?.(f)}
                   >
                     <div className="flex items-center justify-between mb-2">
-                      <div className="font-bold text-gray-100 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent group-hover:from-indigo-300 group-hover:to-purple-400">
+                      <div className="font-bold text-gray-100 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text  group-hover:from-indigo-300 group-hover:to-purple-400">
                         M{mag?.toFixed?.(1) ?? mag ?? "?"}
                       </div>
                       <div className="text-xs font-medium text-gray-400 bg-gray-700/60 px-2 py-1 rounded-full">

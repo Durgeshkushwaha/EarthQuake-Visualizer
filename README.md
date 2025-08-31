@@ -1,12 +1,39 @@
-# React + Vite
+# 🌍 Earthquake Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web application that visualizes **real-time earthquake activity** worldwide using the [USGS Earthquake API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojso).  
+Built with **React, Leaflet, and Tailwind CSS**, this project helps geography students and researchers better understand seismic patterns.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📡 **Live Earthquake Data** – fetches the latest earthquakes from USGS.
+- 🗺️ **Interactive World Map** – earthquakes shown as markers with popups.
+- 🔎 **List & Map Integration** – click an earthquake from the list to zoom into its location on the map.
+- ⏳ **Date Range Filters** - (today, week, month).
+- 🎚️ **Magnitude Filters** - (small(green), medium(yellow), strong(red) earthquakes).
+- 🎥 **Smooth Fly-To Animation** – zooms out → flies → zooms in to the new earthquake location.
+- 💬 **Auto-Open Popups** – details appear immediately when a location is selected.
+- 🎨 **Responsive UI** – works on desktop & mobile.
+- 🧩 **Draggable Legend** – reposition the legend anywhere on the map.
+- ⚠️ **Error Handling** – handles API/network failures gracefully.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [React](https://reactjs.org/)  
+- **Map Library**: [React-Leaflet](https://react-leaflet.js.org/)  
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)  
+- **Data API**: [USGS Earthquake API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson)  
+- **State Management**: React Hooks & Context  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Durgeshkushwaha/EarthQuake-Visualizer.git
+cd earthquake-visualizer
+
