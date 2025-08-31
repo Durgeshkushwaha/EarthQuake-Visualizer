@@ -46,4 +46,5 @@ Run the development server
 
 npm run dev
 
-Open in browser - http://localhost:5173
+Open in browser
+
