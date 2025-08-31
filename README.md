@@ -50,3 +50,6 @@ Open in browser
 
 http://localhost:5173
 
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/763e2ccc-9a19-466e-b193-aa2a5c3f89ef" />
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/2f48f6c0-3ed8-4762-8d6d-9007ccca0cbf" />
+
