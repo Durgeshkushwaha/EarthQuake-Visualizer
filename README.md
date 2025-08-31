@@ -49,3 +49,9 @@ npm run dev
 Open in browser
 
 http://localhost:5173
+
+
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/45f78b4c-74ad-4c02-90cd-646a7017e713" />
+
+
+<img width="1919" height="1019" alt="Screenshot 2025-08-31 150422" src="https://github.com/user-attachments/assets/c85cfcd6-b427-4e1b-b8bc-374c058ee2a7" />
