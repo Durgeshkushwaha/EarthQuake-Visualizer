@@ -10,7 +10,7 @@ Built with **React, Leaflet, and Tailwind CSS**, this project helps geography st
 - 📡 **Live Earthquake Data** – fetches the latest earthquakes from USGS.
 - 🗺️ **Interactive World Map** – earthquakes shown as markers with popups.
 - 🔎 **List & Map Integration** – click an earthquake from the list to zoom into its location on the map.
-- ⏳ **Date Range Filters** - (today, week, month).
+- ⏳ **Date Range Filters** - (hour, day, week).
 - 🎚️ **Magnitude Filters** - (small(green), medium(yellow), strong(red) earthquakes).
 - 🎥 **Smooth Fly-To Animation** – zooms out → flies → zooms in to the new earthquake location.
 - 💬 **Auto-Open Popups** – details appear immediately when a location is selected.
@@ -37,3 +37,14 @@ Built with **React, Leaflet, and Tailwind CSS**, this project helps geography st
 git clone https://github.com/Durgeshkushwaha/EarthQuake-Visualizer.git
 cd earthquake-visualizer
 
+### 2. Install dependencies
+```bash
+npm install
+
+### 3. Run the development server
+```bash
+npm run dev
+
+### 4. Open in browser
+```bash
+Open in browser
